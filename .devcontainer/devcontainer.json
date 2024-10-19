@@ -1,0 +1,37 @@
+{
+    "name": "Alex Taylor Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "editor.fontSize": 14,
+        "terminal.integrated.fontSize": 14,
+        "workbench.iconTheme": "eq-material-theme-icons",  // Material Icon Theme
+        "workbench.colorTheme": "GitHub Dark Colorblind",   // GitHub Dark Colorblind theme
+        "workbench.editor.enablePreview": false,
+        "workbench.editor.openSideBySideDirection": "right"
+    },
+    "extensions": [
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "github.copilot",
+        "github.copilot-chat",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.github-vscode-theme",
+        "ms-vscode.vscode-typescript-next",
+        "ms-azuretools.vscode-docker",
+        "GitHub.vscode-github-actions",
+        "PKief.material-icon-theme"  // Official Material Icon Theme extension
+    ],
+    "postCreateCommand": "npm install",
+    "remoteUser": "vscode",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "cache": {
+        "paths": [
+            "/home/vscode/.vscode-server/extensions"
+        ]
+    }
+}
